@@ -1,3 +1,19 @@
+# Aplicação de Tarefas
+
+### Set up
+
+Depois de fazer clone ou download, executem
+
+```
+npm install
+```
+
+Na pasta do projeto (aquela que tem o ficheiro `package.json`) para instalar as dependências.
+
+Depois, executem `npm start` para lançar o projeto.
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
