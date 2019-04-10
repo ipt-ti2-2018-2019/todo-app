@@ -26,7 +26,10 @@ export class AddTodoForm extends React.Component {
 
   render() {
     return (
-      <form onSubmit={(evt) => this.handleSubmit(evt)}>
+      <form
+        onSubmit={(evt) => this.handleSubmit(evt)}
+        className="add-todo-form"
+      >
         <input
           type="text"
           value={this.state.newTodoText}

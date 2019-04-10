@@ -5,6 +5,7 @@ import { TodoCounter } from "./TodoCounter";
 import { TodoItem } from "./TodoItem";
 import { AddTodoForm } from "./AddTodoForm";
 import { TodoListActions } from "./TodoListActions";
+import { AppHeader } from "./AppHeader";
 
 export class TodoApp extends React.Component {
   constructor(props) {
@@ -42,7 +43,9 @@ export class TodoApp extends React.Component {
     }
 
     return (
-      <div>
+      <div className="todo-app">
+        <AppHeader />
+
         <AddTodoForm
           onNewTodo={(newTodoText) => this.handleNewTodo(newTodoText)}
         />

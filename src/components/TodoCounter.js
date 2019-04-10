@@ -8,7 +8,7 @@ export function TodoCounter(props) {
   switch (props.currentFilter) {
     case "all":
       return (
-        <p>
+        <p className="todo-counter">
           {props.count === 0
             ? "Não existem tarefas!"
             : "Tens um total de " + props.count + " tarefas!"}
@@ -16,7 +16,7 @@ export function TodoCounter(props) {
       );
     case "done":
       return (
-        <p>
+        <p className="todo-counter">
           {props.count === 0
             ? "Não está nada feito!"
             : "Tens " + props.count + " tarefas feitas!"}
@@ -24,13 +24,13 @@ export function TodoCounter(props) {
       );
     case "todo":
       return (
-        <p>
+        <p className="todo-counter">
           {props.count === 0
             ? "Não tens nada para fazer!"
             : "Tens " + props.count + " tarefas por fazer!"}
         </p>
       );
     default:
-      return <p>Hmmm.....</p>;
+      return <p className="todo-counter">Hmmm.....</p>;
   }
 }

@@ -14,7 +14,7 @@ export class TodoListActions extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="todo-list-actions">
         <button
           disabled={this.props.currentFilter === "all"}
           type="button"
@@ -36,11 +36,13 @@ export class TodoListActions extends React.Component {
         >
           Ver por fazer
         </button>
-        <div>
-          <button type="button" onClick={(evt) => this.handleDeleteDone(evt)}>
-            Apagar concluídas
-          </button>
-        </div>
+        <button
+          type="button"
+          onClick={(evt) => this.handleDeleteDone(evt)}
+          className="todo-list-action-delete-all"
+        >
+          Apagar concluídas
+        </button>
       </div>
     );
   }
