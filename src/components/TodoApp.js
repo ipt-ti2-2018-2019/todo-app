@@ -46,14 +46,12 @@ export class TodoApp extends React.Component {
         <AddTodoForm
           onNewTodo={(newTodoText) => this.handleNewTodo(newTodoText)}
         />
-
+        Teste
         <TodoCounter
           currentFilter={this.state.filter}
           count={todoItemsAux.length}
         />
-
         <TodoList>{todoItemsAux}</TodoList>
-
         <TodoListActions
           currentFilter={this.state.filter}
           onDeleteDone={() => this.handleDeleteDone()}
